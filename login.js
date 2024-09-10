@@ -1,5 +1,6 @@
-Parse.initialize("ziF0QzwENpNeDImCmQ6BicKnwIB2dYCO035Em9pL", "9Pz6oMi7vMZOZNB7i68s4vJq2TFxR6qEZsSJp6id");
 Parse.serverURL = 'https://parseapi.back4app.com/';
+Parse.initialize("ziF0QzwENpNeDImCmQ6BicKnwIB2dYCO035Em9pL", "9Pz6oMi7vMZOZNB7i68s4vJq2TFxR6qEZsSJp6id");
+
 
 const loginForm = document.getElementById('loginForm');
 
@@ -9,7 +10,7 @@ loginForm.addEventListener('submit', async (event) => {
     const password = document.getElementById('password').value;
 
     try {
-        const user = await Parse.User.logIn(email, password);
+        const User = await Parse.User.logIn(email, password);
         alert('Login realizado com sucesso');
         // Redirecionar para a página de gerenciamento de carros
         window.location.href = 'carros.html';
