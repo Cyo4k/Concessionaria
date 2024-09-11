@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+
+data-bs-theme{
+  --bs-blue: #0d6efd;
