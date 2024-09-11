@@ -13,7 +13,7 @@ loginForm.addEventListener('submit', async (event) => {
         const User = await Parse.User.logIn(email, password);
         alert('Login realizado com sucesso');
         // Redirecionar para a página de gerenciamento de carros
-        window.location.href = 'carros.html';
+        window.location.href = '../cadastroVeiculo/cadastroVeiculo.html';
     } catch (error) {
         alert('Erro ao fazer login: ' + error.message);
     }
